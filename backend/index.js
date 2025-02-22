@@ -13,7 +13,8 @@ dotenv.config();
 app.use(express.json({ limit: "10mb" }));
 app.use(cors());
 const MONGO_URL =
-  process.env.MONGO_URL || "mongodb://127.0.0.1:27017/ecommerce";
+  process.env.MONGO_URL ||
+  "mongodb+srv://ashwingandoli1:5dVxaMXTYsYX3J5J@cluster0.mwtr5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(MONGO_URL, {
